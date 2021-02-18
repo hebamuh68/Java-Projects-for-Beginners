@@ -46,16 +46,15 @@ public class Student {
 			else { System.out.println("BREAK!"); break; }
 			       	
 		  } while (1 != 0);
-	   
-		
+
 		  System.out.println("ENROLLED IN: " + courses);
-		  System.out.println("TUITION BALANCE: " + tuitionBalance);	
-	     }
+		  System.out.println("TUITION BALANCE: " + tuitionBalance); }	
+	     
 	
 	
 	public void viewBalance() {
-		System.out.println("Your balance is: $" + tuitionBalance);
-	}
+		System.out.println("Your balance is: $" + tuitionBalance); }
+	
 	
 	
 	public void payTuition() {
