@@ -20,8 +20,8 @@ public class email {
 		this.department = setDepartment();
 		this.password = randomPassword(defaultPasswrodLength);
 		
-		Email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companysuffix;
-	}
+		Email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companysuffix; }
+	
 	
 	
 	private String setDepartment() {
@@ -32,8 +32,8 @@ public class email {
 		if (depChoice == 1) {return "sales";}
 		else if (depChoice == 2) {return "dev";}
 		else if (depChoice == 3) {return "acct";}
-		else {return "";}
-	}
+		else {return "";} }
+	
 	
 	
 	private String randomPassword(int length) {
@@ -44,23 +44,23 @@ public class email {
 			int rand = (int) (Math.random() * passowrdSet.length()); //random index (which is from the length :))
 			password[i] = passowrdSet.charAt(rand);  // the variable of the radom index
 		}
-		return new String(password);
-	}
+		return new String(password); }
+	
 	
 	
 	public void set_mail_box_capacity (int capacity) {
-		this.mail_box_capacity = capacity;
-	}
+		this.mail_box_capacity = capacity; }
+	
 	
 	
 	public void set_Alternate_Email(String altEmail) {
-		this.AlternateEmail = altEmail;
-	}
+		this.AlternateEmail = altEmail; }
+	
 	
 	
 	public void changePassword(String password) {
-		this.password = password;
-	}
+		this.password = password; }
+	
 	
 	
 	public int get_mail_box_capacity() {return mail_box_capacity;}  
@@ -74,20 +74,8 @@ public class email {
 	
 	public String showInfo() {
 		return "DISPLY NAME: " + firstName + " " + lastName+
-				"\nCOMPANY EMAIL: " + Email +
-				"\nMAILBOX CAPACITY: " + mail_box_capacity + "nb";
+			"\nCOMPANY EMAIL: " + Email +
+			"\nMAILBOX CAPACITY: " + mail_box_capacity + "nb"; }
 				
-	}
-	
-
-
-	
-	
-	
-	
-	
-
-	
-
 }
 
