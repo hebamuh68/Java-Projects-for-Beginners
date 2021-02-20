@@ -29,4 +29,27 @@ Scanner scanner = new Scanner (System .in );
 			System.out.println(number*number*number);
 
 ____________________________________________________________________________
+- /* Write a program that prints the contents of a file called "data.txt",
+such that each line of the file is printed on its own line.*/
+	
+package practical;
+import java.io.*;
+import java.util.Scanner; 
+
+public class Practical {
+
+	public static void main(String[] args) throws IOException  
+{
+	Scanner scanner = new Scanner (System .in );
+	
+    File file = new File("/home/hebaallah/heb.txt"); 	  
+	Scanner sc = new Scanner(file); 
+    while (sc.hasNextLine()) 
+		System.out.println(sc.nextLine());
+		  
+
+}
+}
+____________________________________________________________________________
+
 			
