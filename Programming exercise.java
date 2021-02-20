@@ -51,5 +51,33 @@ public class Practical {
 }
 }
 ____________________________________________________________________________
+- /* Write a program that asks the user for a string, and then prints the
+contents of a file with a name matching the string provided. You may
+assume that the user provides a file name that the program can find.*/
+	
+package practical;
+import java.io.*;
+import java.util.Scanner; 
+
+public class Practical {
+
+	public static void main(String[] args) throws IOException  
+{
+	Scanner scanner = new Scanner (System .in );
+	System.out.print("Which file should have its contents printed?\n- ");
+	String fileName = scanner.next();
+	
+	File file = new File ("/home/username/"+fileName+".txt");
+	Scanner content = new Scanner(file);
+	
+	while (content.hasNextLine()) {
+		System.out.println(content.nextLine());
+	}
+
+}
+}
+
+/* make sure all files in the same main path */
+____________________________________________________________________________
 
 			
