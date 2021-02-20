@@ -40,12 +40,12 @@ public class Practical {
 
 	public static void main(String[] args) throws IOException  
 {
-	Scanner scanner = new Scanner (System .in );
+    Scanner scanner = new Scanner (System .in );
 	
-    File file = new File("/home/hebaallah/heb.txt"); 	  
-	Scanner sc = new Scanner(file); 
+    File file = new File("/home/username/fileName.txt"); 	  
+    Scanner sc = new Scanner(file); 
     while (sc.hasNextLine()) 
-		System.out.println(sc.nextLine());
+	System.out.println(sc.nextLine());
 		  
 
 }
