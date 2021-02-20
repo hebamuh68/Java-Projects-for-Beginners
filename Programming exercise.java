@@ -14,4 +14,19 @@ Scanner scanner = new Scanner (System .in );
 		
 		System.out.print(sum-1);
     
-    ____________________________
+____________________________________________________________________________
+- /* Write a program that reads strings from the user until the user inputs
+the string "end". As long as the input is not "end", the program should
+handle the input as an integer and print the cube of the number */
+
+Scanner scanner = new Scanner (System .in );
+		
+		while(true) {
+			String input = scanner.next();
+			if (input.equals("end")) {break;}
+			
+			int number = Integer .valueOf(input);
+			System.out.println(number*number*number);
+
+____________________________________________________________________________
+			
