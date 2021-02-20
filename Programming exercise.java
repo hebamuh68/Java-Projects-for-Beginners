@@ -7,12 +7,10 @@ program works. */
 Scanner scanner = new Scanner (System .in );
 		int sum = 0;
 		
-		while (true ) 
-		{
+		while (true ) {
 		 String line = scanner.next();
 		 sum +=1;
-		 if (line .equals ("end" )) {  break ; }
-	    }
+		 if (line .equals ("end" )) {  break ; }}
 		
 		System.out.print(sum-1);
     
